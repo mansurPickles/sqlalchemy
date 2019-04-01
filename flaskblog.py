@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 posts = [
@@ -6,13 +6,13 @@ posts = [
         'author': 'Brandon Luong',
         'title': 'Hello World',
         'content': 'Hello World!',
-        'data_posted': 'April 01 2019'
+        'date_posted': 'April 01 2019'
     },
     {
         'author': 'Alice',
         'title': 'Second Post',
         'content': 'Lorem Ipsom',
-        'data_posted': 'April 02 2019'
+        'date_posted': 'April 02 2019'
     }
 ]
 
